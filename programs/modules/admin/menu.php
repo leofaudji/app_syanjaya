@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed') ; ?>
 #Nama, Obj, Lokasi, Icon, Lebar, Tinggi, title, resize, modal, frame, help, bodyclass, headerclass
-["Dashboard Center", "d", "admin/dash/d", "ion-ios-speedometer", 0, 0, false]
+#["Dashboard Center", "d", "admin/dash/d", "ion-ios-speedometer", 0, 0, false]
 ["Master", "mst", "", "ion-ios-briefcase"]
   ["Rekening", "mstrekening", "admin/mst/mstrekening", "" ,800, 500, false]
   ["Tarif", "msttarif", "admin/mst/msttarif", "" ,800, 500, false]
