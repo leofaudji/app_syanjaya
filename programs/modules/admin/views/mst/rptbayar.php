@@ -13,7 +13,7 @@
             data-sf="load_pelanggan" data-placeholder="Pelanggan"></select> 
 			</td>
 			<td><label id="statuspem"></label></td>
-		</tr>
+		</tr> 
 		<tr>	 
 			<td width="200px"></td>
 		</tr>

@@ -3,7 +3,7 @@ class Rptabsensi extends Bismillah_Controller{
   protected $bdb ; 
   public function __construct(){ 
     parent::__construct() ;
-    $this->load->helper("bdate") ;
+    $this->load->helper("bdate") ; 
     $this->load->helper("toko") ; 
     $this->load->model("mst/rptabsensi_m") ;
     $this->bdb   = $this->rptabsensi_m ;
@@ -25,6 +25,7 @@ class Rptabsensi extends Bismillah_Controller{
      $vs['kode'] = $vs['pelanggan'] ;
      $vs['status'] = $vs['statuspelanggan'] ;
      $vs['no']   = ++$n ;
+     if($va['offset'] > 0) $vs['no'] += $va['offset'] ;
      //$vs['statuspelanggan'] = statuspelanggan($vs['statuspelanggan']) ;
          /*$vs['cmdedit']    = '<button type="button" onClick="bos.rptabsensi.cmdedit(\''.$dbr['id'].'\')"
                            class="btn btn-default btn-grid">Bayar</button>' ; 

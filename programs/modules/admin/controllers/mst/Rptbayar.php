@@ -9,7 +9,7 @@ class Rptbayar extends Bismillah_Controller{
  
 	public function index(){
 		$this->load->view("mst/rptbayar") ; 
- 
+  
 	}
 
 	public function loadgrid(){
@@ -22,6 +22,7 @@ class Rptbayar extends Bismillah_Controller{
       while( $dbr = $this->bdb->getrow($dbd) ){
          $vs 	  = $dbr;
          $vs['no'] = ++$n ;
+				 if($va['offset'] > 0) $vs['no'] += $va['offset'] ;
          $vs['tgl'] = date_2d($vs['tgl']) ;
          $vs['jumlah'] = $vs['pendaftaran'] + $vs['iuran'] + $vs['sewagedung'] + $vs['suplemen'] ;
          $vs['jumlah'] = string_2s($vs['jumlah']) ;

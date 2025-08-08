@@ -23,6 +23,7 @@ class Rptbukubesar extends Bismillah_Controller{
     while( $dbr = $this->bdb->getrow($dbd) ){
          $vs = $dbr;
          $vs['no'] = ++$n ;
+         if($va['offset'] > 0) $vs['no'] += $va['offset'] ;
          $vs['tgl'] = date_2d($vs['tgl']) ;  
          $c = $vdb['rekening'] ;
          if($c == "1" || $c == "5"){

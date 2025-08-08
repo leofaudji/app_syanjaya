@@ -16,7 +16,7 @@ class Rptbayar_m extends Bismillah_Model{
       $dba      = $this->select("pelanggan_bayar pb", "COUNT(id) id", $where) ;
       if($dbra  = $this->getrow($dba)){    
          $row   = $dbra['id'] ;
-      } 
+      }  
 
       return array("db"=>$dbd, "rows"=> $row ) ;
    }

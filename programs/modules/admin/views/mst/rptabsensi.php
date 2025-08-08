@@ -12,7 +12,7 @@
         <td style="width:40px">&nbsp;s/d&nbsp;</td>  
         <td style="width:80px" >  
           <input style="width:80px" type="text" class="form-control date" id="tglakhir" name="tglakhir" required value=<?=date("d-m-Y")?> <?=date_set()?>>
-        </td>  
+        </td>    
         <!--
         <td>
           <select name="pelanggan" id="pelanggan" class="form-control select" style="width:100%" data-sf="load_pelanggan" data-placeholder="Pelanggan" required></select>

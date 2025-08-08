@@ -60,9 +60,9 @@ class Rptabsensi_m extends Bismillah_Model{
       $ww       = 0 ;
       $cKeterangan = "<font style='color:red;font-weight:bold;'>Non Aktif / Bonus</font>";
       //$cKeterangan = "Tidak Aktif";   
-      $where    = "pb.pelanggan = '$id' and pb.tgl >= '$tglawal' and pb.tgl <= '$tglakhir'" ;    
+      $where    = "pb.pelanggan = '$id' and pb.tgl >= '$tglawal' and pb.tgl <= '$tglakhir'" ;     
       //$where    = "pb.pelanggan = '$id' and pb.iuran > 0" ;    
-      $dba      = $this->select("pelanggan_bayar pb", "pb.tgl,pb.keterangan,pb.iuran", $where,"","pb.tgl DESC") ; 
+      $dba      = $this->select("pelanggan_bayar pb", "pb.tgl,pb.keterangan,pb.iuran", $where,"","pb.tgl","pb.tgl DESC") ; 
       $va       = array("tgl"=>"","keterangan"=>"","iuran"=>0) ; 
       while($dbra  = $this->getrow($dba)){  
         $ww++ ;

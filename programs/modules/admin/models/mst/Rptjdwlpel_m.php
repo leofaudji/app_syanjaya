@@ -12,7 +12,7 @@ class Rptjdwlpel_m extends Bismillah_Model{
       $join     = "left join tarif t on t.kode = p.statuspelanggan"  ;
       $dbd      = $this->select("pelanggan p ", $f, $where, $join, "", "p.id DESC", $limit) ;
       $data     = array() ;
-      $n        = 0 ;
+      $n        = 0 ; 
       if($dbr  = $this->getrow($dbd)){ 
          $nwajib = 0 ; 
          $nbayar = 0 ;
@@ -136,7 +136,7 @@ class Rptjdwlpel_m extends Bismillah_Model{
       $cKeterangan = "";
       $nRow     = 0;
       $where    = "pelanggan = '$id' and tgl >= '$tglawal' and tgl <= '$tglakhir'" ;     
-      $dba      = $this->select("pelanggan_bayar", "tgl,keterangan,iuran", $where,"","tgl DESC") ;
+      $dba      = $this->select("pelanggan_bayar", "tgl,keterangan,iuran", $where,"","tgl","tgl DESC") ;
       $va       = array("tgl"=>"","keterangan"=>"","iuran"=>0) ; 
       while($dbra  = $this->getrow($dba)){  
          $nRow ++;    

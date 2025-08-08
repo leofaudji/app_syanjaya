@@ -27,6 +27,7 @@ class Trjadwalbayar extends Bismillah_Controller{
       $no      = 0 ; 
       ++$n ;
       $vs['no'] = $n ;
+      if($va['offset'] > 0) $vs['no'] += $va['offset'] ;
       $vs['wajib'] = $nwajib ;
       $vs['bayar'] = 0 ;
       $tepat = 0 ; 

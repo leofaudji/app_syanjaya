@@ -7,7 +7,7 @@ class Rptjdwlpel extends Bismillah_Controller{
     $this->bdb   = $this->rptjdwlpel_m ;
   }
  
-  public function index(){
+  public function index(){ 
     $this->load->view("mst/rptjdwlpel") ; 
  
   }  
